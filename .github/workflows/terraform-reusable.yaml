@@ -5,7 +5,7 @@ on:
         required: true
         type: string
 
-env:
+#env:
  # verbosity setting for Terraform logs
  #TF_LOG: INFO
  # Credentials for deployment to AWS
