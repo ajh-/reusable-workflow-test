@@ -14,7 +14,7 @@ provider "github" {
 
 resource "github_actions_variable" "example_variable" {
   repository    = "reusable-workflow-test"
-  variable_name = "terraform-test"
+  variable_name = "terraform_test"
   value         = "this_is_a_test_variable"
 }
 
