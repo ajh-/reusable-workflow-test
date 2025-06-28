@@ -28,6 +28,10 @@ jobs:
    steps:
      - name: Checkout the repository to the runner
        uses: actions/checkout@v2
+
+     - name: Echo secret
+       run: |
+          echo "secret: $TEST_SECRET"
  
      - name: Setup Terraform with specified version on the runner
        uses: hashicorp/setup-terraform@v2
