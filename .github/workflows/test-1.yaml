@@ -17,5 +17,5 @@ jobs:
   call-reusable-terraform-workflow:
     uses: ./.github/workflows/terraform-reusable.yaml
     with:
-      var-file: "./organizations/org-1.tfvars"
+      var-file: "$GITHUB_WORKSPACE/organizations/org-1.tfvars"
     secrets: inherit
