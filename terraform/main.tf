@@ -9,7 +9,9 @@ terraform {
 
 provider "github" {
   owner = "ajh-"
-  app_auth {}
+  app_auth {
+    installation_id = var.github_app_installation_id
+  }
 }
 
 resource "github_actions_variable" "example_variable" {
