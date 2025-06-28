@@ -20,6 +20,12 @@ resource "github_actions_variable" "example_variable" {
   value         = "this_is_a_test_value!"
 }
 
+resource "github_actions_variable" "example_variable2" {
+  repository    = "reusable-workflow-test"
+  variable_name = "terraform_test_variable-2"
+  value         = "this_is_a_test_value!"
+}
+
 resource "null_resource" "default" {
   provisioner "local-exec" {
     command = "echo 'Hello World'"
