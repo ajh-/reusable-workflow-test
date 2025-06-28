@@ -26,4 +26,4 @@ jobs:
   call-reusable-terraform-workflow:
     uses: ./.github/workflows/terraform-reusable.yaml
     with:
-      env-file: "./organizations/org-1.tfvars"
+      var-file: "./organizations/org-1.tfvars"
