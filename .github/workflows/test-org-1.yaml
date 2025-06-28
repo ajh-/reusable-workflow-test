@@ -5,14 +5,14 @@ on:
    branches:
    - main
    paths:
-   - ./terraform/**/*
-   - ./orgs/test-org-1/**/*
+   - terraform/**
+   - test-org-1/**
  pull_request:
    branches:
    - main
    paths:
-   - ./terraform/**/*
-   - ./orgs/test-org-1/**/*
+   - terraform/**
+   - test-org-1/**
  workflow_dispatch: {}
   
 jobs:
