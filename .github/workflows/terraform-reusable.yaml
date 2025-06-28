@@ -5,7 +5,7 @@ on:
         required: true
         type: string
 
-#env:
+env:
  # verbosity setting for Terraform logs
  #TF_LOG: INFO
  # Credentials for deployment to AWS
@@ -13,6 +13,7 @@ on:
  #AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
  # S3 bucket for the Terraform state
  #BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE}}
+ TEST_SECRET: ${{ secrets.TESTING }}
  
 jobs:
  terraform:
