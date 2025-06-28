@@ -1,21 +1,21 @@
-name: "Test 1"
+name: "test-org-1"
  
 on:
  push:
    branches:
    - main
    paths:
-   - terraform/**
+   - ./orgs/test-org-1/**
  pull_request:
    branches:
    - main
    paths:
-   - terraform/**
+   - ./orgs/test-org-1/**
  workflow_dispatch: {}
   
 jobs:
   call-reusable-terraform-workflow:
     uses: ./.github/workflows/terraform-reusable.yaml
     with:
-      var-file: "$GITHUB_WORKSPACE/organizations/org-1.tfvars"
+      var-file: "$GITHUB_WORKSPACE/orgs/org-1.tfvars"
     secrets: inherit
