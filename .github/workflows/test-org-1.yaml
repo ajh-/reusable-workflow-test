@@ -5,17 +5,19 @@ on:
    branches:
    - main
    paths:
-   - ./orgs/test-org-1/**
+   - ./terraform/**/*
+   - ./orgs/test-org-1/**/*
  pull_request:
    branches:
    - main
    paths:
-   - ./orgs/test-org-1/**
+   - ./terraform/**/*
+   - ./orgs/test-org-1/**/*
  workflow_dispatch: {}
   
 jobs:
   call-reusable-terraform-workflow:
     uses: ./.github/workflows/terraform-reusable.yaml
     with:
-      var-file: "$GITHUB_WORKSPACE/orgs/org-1.tfvars"
+      var-file: "$GITHUB_WORKSPACE/org-1.tfvars"
     secrets: inherit
