@@ -26,7 +26,7 @@ resource "github_actions_variable" "example_variable2" {
   value         = "this_is_a_test_value!"
 }
 
-resource "github_actions_variable" "example_variable2" {
+resource "github_actions_variable" "example_variable3" {
   repository    = "reusable-workflow-test"
   variable_name = "terraform_test_variable-3"
   value         = "this_is_a_test_value!"
