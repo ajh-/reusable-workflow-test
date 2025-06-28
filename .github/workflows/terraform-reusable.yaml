@@ -1,3 +1,5 @@
+name: "terraform-reusable"
+
 on:
   workflow_call:
     inputs:
