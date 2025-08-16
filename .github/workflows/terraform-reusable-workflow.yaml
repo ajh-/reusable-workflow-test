@@ -43,7 +43,7 @@ jobs:
     
      - name: Terraform init
        id: init
-       run: terraform init
+       run: terraform init -backend-config backend.conf
  
      - name: Terraform format
        id: fmt
