@@ -4,9 +4,8 @@ terraform {
       source  = "integrations/github"
       version = "~> 6.0"
     }
-  } 
-  backend "s3" {
   }
+  backend "s3" {}
 }
 
 provider "github" {
