@@ -19,7 +19,7 @@ env:
 jobs:
  terraform:
    name: "Run Terraform"
-   runs-on: ubuntu-latest
+   runs-on: github-runner-set
    defaults:
      run:
        shell: bash
