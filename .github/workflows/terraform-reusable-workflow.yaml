@@ -30,6 +30,12 @@ jobs:
      - name: Checkout the repository to the runner
        uses: actions/checkout@v2
 
+     - name: Install dependencies
+       run: |
+         sudo apt-get update && \
+         sudo apt-get install -y \
+         nodejs
+
      - name: Configure AWS credentials using OIDC
        uses: aws-actions/configure-aws-credentials@v4
        with:
