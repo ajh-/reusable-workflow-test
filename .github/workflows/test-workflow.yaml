@@ -10,7 +10,7 @@ jobs:
   
     steps:
       - name: Checkout repository
-        uses: actions/checkout@vt
+        uses: actions/checkout@v5
 
       - name: Checkmarx AST Github Action
         uses: Checkmarx/ast-github-action@2.3.26
