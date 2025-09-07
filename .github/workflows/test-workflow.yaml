@@ -12,9 +12,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Build Image
-        uses: redhat-actions/buildah-build@v2
+      - name: Build image  
+        uses: docker/build-push-action@v5
         with:
-          image: my-app
-          tags: latest v1.0
-          containerfiles: ./Dockerfile
+          context: .
+          file: ./Dockerfile
+          push: false
+          tags: test-image/testing:latest
