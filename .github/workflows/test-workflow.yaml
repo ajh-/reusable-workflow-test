@@ -4,7 +4,7 @@ on:
 
 jobs:
   build-and-push-image:
-    runs-on: github-runners
+    runs-on: runs-on=${{ github.run_id }}/runner=2cpu-linux-x64
     permissions:
       contents: read
   
