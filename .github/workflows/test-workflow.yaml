@@ -12,6 +12,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Checkmarx AST Github Action
-        uses: Checkmarx/ast-github-action@2.3.26
-      
+      - name: Build Image
+        uses: redhat-actions/buildah-build@v2
+        with:
+          base-image: docker.io/fabric8/java-alpine-openjdk11-jre # Specify your base image
+          image: my-new-image # Name of your output image
+          tags: v1 # Tag(s) for the image
