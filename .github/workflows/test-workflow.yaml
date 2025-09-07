@@ -4,7 +4,7 @@ on:
 
 jobs:
   build-and-push-image:
-    runs-on: github-runners
+    runs-on: ubuntu-latest
     permissions:
       contents: read
   
